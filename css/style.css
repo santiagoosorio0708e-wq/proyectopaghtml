@@ -390,16 +390,16 @@ body {
 /* Responsive adjustments for larger screens */
 @media (min-width: 481px) {
     .app-container {
-        margin: 20px auto;
-        height: 90vh;
-        border-radius: 40px;
-        overflow-y: auto;
-        border: 8px solid var(--color-primary);
+        margin: 0 auto;
+        height: 100vh;
+        border-radius: 0;
+        overflow-y: visible;
+        border: none;
     }
 
     .bottom-nav {
         position: absolute;
-        border-bottom-left-radius: 32px;
-        border-bottom-right-radius: 32px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
 }

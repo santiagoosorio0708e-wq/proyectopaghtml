@@ -439,3 +439,34 @@ body {
         padding-bottom: var(--spacing-md);
     }
 }
+
+/* Landscape adjustments for Mobile Phones explicitly */
+@media (max-height: 500px) and (orientation: landscape) {
+    .product-hero {
+        height: 250px;
+        /* Reduce hero image height so content can be seen */
+    }
+
+    .product-details {
+        padding: var(--spacing-md);
+        padding-bottom: 80px;
+        /* Less space for smaller bottom bar */
+    }
+
+    body {
+        padding-bottom: 80px;
+    }
+
+    .bottom-action-bar {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+
+    .primary-btn {
+        padding: var(--spacing-sm) var(--spacing-md);
+        min-width: 150px;
+    }
+
+    .product-title {
+        font-size: var(--font-size-lg);
+    }
+}

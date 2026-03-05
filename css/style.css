@@ -403,3 +403,22 @@ body {
         border-bottom-right-radius: 0;
     }
 }
+
+/* Landscape adjustments for Mobile Phones explicitly */
+@media (max-height: 500px) and (orientation: landscape) {
+    .home-header {
+        padding: var(--spacing-xs) var(--spacing-md);
+    }
+
+    .product-image-container {
+        aspect-ratio: 1/1;
+    }
+
+    .bottom-nav {
+        padding: var(--spacing-xs) 0;
+    }
+
+    .nav-item {
+        padding: var(--spacing-xs);
+    }
+}

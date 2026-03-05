@@ -127,6 +127,3 @@ Recomendación:
 - Implementar autenticación de usuario.
 - Mejorar accesibilidad (aria, focus states, teclado).
 - Añadir pruebas básicas de UI.
-
-## Autor
-Proyecto académico/práctico desarrollado como ejercicio de frontend.

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Producto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Image & Actions Section -->
+        <section class="product-hero">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                alt="Camiseta Básica Blanca" class="hero-image">
+
+            <nav class="top-actions">
+                <a href="../index.html" class="action-btn back-btn" aria-label="Volver atrás">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                    </svg>
+                </a>
+                <button class="action-btn favorite-btn active" aria-label="Añadir a favoritos">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                </button>
+            </nav>
+        </section>
+
+        <!-- Product Details -->
+        <main class="product-details">
+            <div class="title-row">
+                <h1 class="product-title">Camiseta Básica Blanca</h1>
+                <div class="quantity-selector">
+                    <button class="qty-btn" aria-label="Disminuir">-</button>
+                    <span class="qty-number">1</span>
+                    <button class="qty-btn" aria-label="Aumentar">+</button>
+                </div>
+            </div>
+
+            <div class="rating-views">
+                <div class="rating">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none" class="star-icon">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                        </polygon>
+                    </svg>
+                    <span class="rating-score">4.5</span>
+                    <span class="rating-count">(89 reseñas)</span>
+                </div>
+                <div class="views">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                    <span>150 vistas</span>
+                </div>
+            </div>
+
+            <!-- CSS Checkbox Hack for Modal/Accordion without JS -->
+            <div class="description-section">
+                <input type="checkbox" id="show-more" class="show-more-toggle">
+                <div class="description-content">
+                    <p>Una camiseta básica impecable y atemporal. Fabricada con el mejor algodón para brindarte suavidad
+                        y durabilidad extra para el uso diario en cualquier atuendo casual.</p>
+                    <div class="extra-details">
+                        <ul>
+                            <li>Material: 100% Algodón Pima</li>
+                            <li>Cuidado: Lavable a máquina</li>
+                            <li>Ajuste: Regular/Holgado</li>
+                            <li>Escote: Cuello redondo</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Ver más modal trigger -->
+                <label for="show-more" class="show-more-btn">
+                    <span class="text-more">Ver más detalles</span>
+                    <span class="text-less">Ver menos</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="chevron-icon">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </label>
+            </div>
+
+            <!-- Size Selection -->
+            <section class="selection-section">
+                <div class="section-header">
+                    <h2>Talla</h2>
+                    <a href="#" class="size-guide">Guía de tallas</a>
+                </div>
+                <div class="options-row size-options">
+                    <label class="option-label">
+                        <input type="radio" name="size" value="s">
+                        <span class="option-chip">S</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="size" value="m" checked>
+                        <span class="option-chip">M</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="size" value="l">
+                        <span class="option-chip">L</span>
+                    </label>
+                    <label class="option-label">
+                        <input type="radio" name="size" value="xl">
+                        <span class="option-chip">XL</span>
+                    </label>
+                </div>
+            </section>
+
+            <!-- Color Selection -->
+            <section class="selection-section">
+                <div class="section-header">
+                    <h2>Color</h2>
+                </div>
+                <div class="options-row color-options">
+                    <label class="color-label">
+                        <input type="radio" name="color" value="blanca" checked>
+                        <span class="color-swatch" style="background-color: #FFFFFF; border: 1px solid #ddd;"></span>
+                    </label>
+                    <label class="color-label">
+                        <input type="radio" name="color" value="negra">
+                        <span class="color-swatch" style="background-color: #111111;"></span>
+                    </label>
+                    <label class="color-label">
+                        <input type="radio" name="color" value="gris">
+                        <span class="color-swatch" style="background-color: #9E9E9E;"></span>
+                    </label>
+                </div>
+            </section>
+        </main>
+
+        <!-- Fixed Bottom Action bar -->
+        <div class="bottom-action-bar">
+            <div class="price-container">
+                <span class="price-label">Precio Total</span>
+                <span class="total-price">$15.00</span>
+            </div>
+            <a href="checkout.html" class="primary-btn checkout-btn">
+                Comprar ahora
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

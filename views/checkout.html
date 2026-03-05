@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Navigation Header -->
+        <header class="checkout-header">
+            <a href="detail.html" class="icon-btn" aria-label="Atrás">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+            </a>
+            <h1 class="header-title">Checkout</h1>
+            <!-- CSS Hack for mobile menu -->
+            <input type="checkbox" id="mobile-menu-toggle" class="menu-toggle-checkbox">
+            <label for="mobile-menu-toggle" class="icon-btn menu-btn" aria-label="Menú">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </label>
+
+            <!-- Mobile Menu content -->
+            <div class="mobile-menu">
+                <nav class="menu-nav">
+                    <a href="../index.html">Inicio</a>
+                    <a href="#" class="active">Carrito</a>
+                    <a href="#">Favoritos</a>
+                    <a href="#">Perfil</a>
+                </nav>
+            </div>
+            <!-- Overlay for mobile menu -->
+            <label for="mobile-menu-toggle" class="menu-overlay"></label>
+        </header>
+
+        <main class="checkout-content">
+            <!-- Cart Items -->
+            <section class="cart-section">
+                <h2 class="section-title">Tu Pedido</h2>
+                <div class="cart-list">
+                    <!-- Item 1 -->
+                    <div class="cart-item">
+                        <img src="https://images.unsplash.com/photo-1515347619362-6c3461626eb1?q=80&w=200&auto=format&fit=crop"
+                            alt="Vestido de Verano" class="item-img">
+                        <div class="item-details">
+                            <h3 class="item-title">Vestido de Verano Floral</h3>
+                            <span class="item-category">Vestidos</span>
+                            <span class="item-price">$45.00</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="qty-btn" aria-label="Disminuir">-</button>
+                            <span class="qty-number">1</span>
+                            <button class="qty-btn" aria-label="Aumentar">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="cart-item">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=200&auto=format&fit=crop"
+                            alt="Camiseta Básica" class="item-img">
+                        <div class="item-details">
+                            <h3 class="item-title">Camiseta Básica Blanca</h3>
+                            <span class="item-category">Camisetas</span>
+                            <span class="item-price">$15.00</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="qty-btn" aria-label="Disminuir">-</button>
+                            <span class="qty-number">2</span>
+                            <button class="qty-btn" aria-label="Aumentar">+</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Shipping Info -->
+            <section class="shipping-section">
+                <h2 class="section-title">Información de Envío</h2>
+                <div class="address-card">
+                    <div class="address-header">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="location-icon">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span class="address-title">Casa</span>
+                        <a href="#" class="edit-btn">Editar</a>
+                    </div>
+                    <p class="address-text">123 Calle Principal, Ciudad, CP 12345</p>
+                </div>
+            </section>
+
+            <!-- Payment Methods -->
+            <section class="payment-section">
+                <h2 class="section-title">Método de Pago</h2>
+                <div class="payment-options">
+                    <label class="payment-card">
+                        <input type="radio" name="payment" value="credit" checked>
+                        <div class="card-content">
+                            <div class="radio-circle"></div>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="payment-icon">
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                <line x1="1" y1="10" x2="23" y2="10"></line>
+                            </svg>
+                            <span class="payment-name">Tarjeta de Crédito</span>
+                        </div>
+                    </label>
+                    <label class="payment-card">
+                        <input type="radio" name="payment" value="debit">
+                        <div class="card-content">
+                            <div class="radio-circle"></div>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="payment-icon">
+                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                                <line x1="1" y1="10" x2="23" y2="10"></line>
+                            </svg>
+                            <span class="payment-name">Tarjeta de Débito</span>
+                        </div>
+                    </label>
+                </div>
+            </section>
+
+            <!-- Order Summary -->
+            <section class="summary-section">
+                <h2 class="section-title">Resumen del Pedido</h2>
+                <div class="summary-card">
+                    <div class="summary-row">
+                        <span class="summary-label">Subtotal (3 items)</span>
+                        <span class="summary-value">$75.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-label">Envío</span>
+                        <span class="summary-value">$5.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-label">Descuento</span>
+                        <span class="summary-value discount">-$10.00</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="summary-row total-row">
+                        <span class="summary-label">Total</span>
+                        <span class="summary-value">$70.00</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Fixed Bottom Button -->
+        <div class="bottom-action-bar">
+            <!-- Checkbox hack for Modal -->
+            <input type="checkbox" id="confirm-modal-toggle" class="modal-toggle" style="display: none;">
+
+            <label for="confirm-modal-toggle" class="primary-btn pay-btn">
+                Pagar $70.00
+            </label>
+
+            <!-- Success Modal via CSS -->
+            <div class="success-modal">
+                <div class="modal-content">
+                    <div class="success-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <h2 class="modal-title">¡Compra Exitosa!</h2>
+                    <p class="modal-text">Tu pedido ha sido procesado y está en camino.</p>
+                    <a href="../index.html" class="primary-btn continue-btn">Volver al Inicio</a>
+                </div>
+                <!-- Clic fuera para cerrar if desired, but we compel them to click "Volver..." -->
+                <label for="confirm-modal-toggle" class="modal-backdrop"></label>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -151,7 +151,8 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-md);
-    padding: 0 var(--spacing-lg) var(--spacing-xl);
+    padding: 0 var(--spacing-lg) 120px;
+    /* Consistent bottom padding for navigation bar */
 }
 
 .product-card {
@@ -261,19 +262,24 @@ body {
 .bottom-nav {
     position: fixed;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     width: 100%;
-    max-width: 480px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: var(--color-bg);
     padding: var(--spacing-sm) 0 calc(var(--spacing-sm) + env(safe-area-inset-bottom, 0px));
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
-    z-index: 10;
-    border-top-left-radius: var(--radius-lg);
-    border-top-right-radius: var(--radius-lg);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-top: 1px solid var(--color-border);
+}
+
+.bottom-nav .nav-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 480px;
 }
 
 .nav-item {
@@ -322,6 +328,7 @@ body {
     .products-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: var(--spacing-lg);
+        padding-bottom: 120px;
     }
 
     .product-image-container {
@@ -368,7 +375,7 @@ body {
     .products-grid {
         grid-template-columns: repeat(4, 1fr);
         gap: var(--spacing-xl);
-        padding: 0 var(--spacing-xxl) var(--spacing-xxl);
+        padding: 0 var(--spacing-xxl) 120px;
     }
 
     .home-header {
@@ -398,13 +405,10 @@ body {
     }
 
     .bottom-nav {
-        position: absolute;
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        border-radius: 0;
     }
 }
 
-/* Landscape adjustments for Mobile Phones explicitly */
 @media (max-height: 500px) and (orientation: landscape) {
     .home-header {
         padding: var(--spacing-xs) var(--spacing-md);

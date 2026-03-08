@@ -6,20 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+
 
     <link rel="stylesheet" href="../css/variables.css">
     <link rel="stylesheet" href="../css/checkout.css">
 </head>
 
 <body>
-    <div class="app-container">
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="navbar-toggle">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <h1 class="logo">Home</h1>
+        </div>
+    </nav>
+    <div class="app-container" style="padding-top: 64px;">
         <!-- Navigation Header -->
         <header class="checkout-header">
-            <a href="detail.html" class="icon-btn" aria-label="Atrás">
+            <a href="../index.html" class="icon-btn" aria-label="Atrás">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                     stroke-linecap="round" stroke-linejoin="round">
                     <line x1="19" y1="12" x2="5" y2="12"></line>
@@ -58,8 +74,7 @@
                 <div class="cart-list">
                     <!-- Item 1 -->
                     <div class="cart-item">
-                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=200&auto=format&fit=crop"
-                            alt="Bolso Rojo" class="item-img">
+                        <img src="../storage/img/bolsorojo.png" alt="Bolso Rojo" class="item-img">
                         <div class="item-details">
                             <h3 class="item-title">Bolso Rojo Cruzado</h3>
                             <span class="item-category">Accesorios</span>
@@ -74,8 +89,7 @@
 
                     <!-- Item 2 -->
                     <div class="cart-item">
-                        <img src="https://images.unsplash.com/photo-1550614000-4b95d466f272?q=80&w=200&auto=format&fit=crop"
-                            alt="Blazer Negro" class="item-img">
+                        <img src="../storage/img/chaquetanegra.png" alt="Blazer Negro" class="item-img">
                         <div class="item-details">
                             <h3 class="item-title">Blazer Negro Clásico</h3>
                             <span class="item-category">Chaquetas</span>

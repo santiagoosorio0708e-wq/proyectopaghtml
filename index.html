@@ -6,23 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eCommerce Home</title>
 
-    <!-- Google Fonts: Encode Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
+
 
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="app-container">
+    <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="navbar-toggle">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Category</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <h1 class="logo">Home</h1>
+        </div>
+    </nav>
+    <div class="app-container" style="padding-top: 64px;">
         <!-- Header / Saludo -->
         <header class="home-header">
             <div class="user-info">
-                <img src="storage/img/Profile_1.png"
-                    alt="User Profile" class="profile-pic">
+                <img src="storage/img/Profile_1.png" alt="User Profile" class="profile-pic">
                 <div class="welcome-text">
                     <p class="greeting">Hola, <span class="user-name">Daniel</span></p>
                     <p class="subtitle">Descubre tu propio estilo</p>
@@ -80,8 +94,7 @@
             <!-- Producto 1 -->
             <a href="views/detail.html?product=vestido" class="product-card">
                 <div class="product-image-container">
-                    <img src="storage/img/vestidoamarillo.png"
-                        alt="Vestido de Verano Floral" class="product-image">
+                    <img src="storage/img/vestidoamarillo.png" alt="Vestido de Verano Floral" class="product-image">
                     <button class="favorite-btn" aria-label="Añadir a favoritos">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -111,8 +124,7 @@
             <!-- Producto 2 -->
             <a href="views/detail.html?product=bolso" class="product-card">
                 <div class="product-image-container">
-                    <img src="storage/img/bolsorojo.png"
-                        alt="Bolso Rojo" class="product-image">
+                    <img src="storage/img/bolsorojo.png" alt="Bolso Rojo" class="product-image">
                     <button class="favorite-btn active" aria-label="Añadir a favoritos">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -135,15 +147,14 @@
                         </div>
                     </div>
                     <h3 class="product-title">Bolso Rojo</h3>
-                    <p class="product-price">$15.00</p>
+                    <p class="product-price">$152.00</p>
                 </div>
             </a>
 
             <!-- Producto 3 -->
             <a href="views/detail.html?product=chaqueta_negra" class="product-card">
                 <div class="product-image-container">
-                    <img src="storage/img/chaquetanegra.png"
-                        alt="Camiseta negra clasica" class="product-image">
+                    <img src="storage/img/chaquetanegra.png" alt="Camiseta negra clasica" class="product-image">
                     <button class="favorite-btn" aria-label="Añadir a favoritos">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -173,8 +184,7 @@
             <!-- Producto 4 -->
             <a href="views/detail.html?product=cuero_vintage" class="product-card">
                 <div class="product-image-container">
-                    <img src="storage/img/chaquetadecuerovintaje.png"
-                        alt="Chaqueta de Cuero" class="product-image">
+                    <img src="storage/img/chaquetadecuerovintaje.png" alt="Chaqueta de Cuero" class="product-image">
                     <button class="favorite-btn" aria-label="Añadir a favoritos">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -196,7 +206,7 @@
                             <span>4.7</span>
                         </div>
                     </div>
-                    <h3 class="product-title">Chaqueta de Cuero Vintage</h3>
+                    <h3 class="product-title">Blazer negro clasico</h3>
                     <p class="product-price">$89.00</p>
                 </div>
             </a>
@@ -204,43 +214,45 @@
 
         <!-- Bottom Navigation -->
         <nav class="bottom-nav">
-            <a href="index.html" class="nav-item active">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                </svg>
-                <span>Inicio</span>
-            </a>
-            <a href="#" class="nav-item">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path
-                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
-                    </path>
-                </svg>
-                <span>Favoritos</span>
-            </a>
-            <a href="views/checkout.html" class="nav-item">
-                <div class="cart-icon-wrapper">
+            <div class="nav-container">
+                <a href="index.html" class="nav-item active">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                         stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="9" cy="21" r="1"></circle>
-                        <circle cx="20" cy="21" r="1"></circle>
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                        <polyline points="9 22 9 12 15 12 15 22"></polyline>
                     </svg>
-                    <span class="cart-badge">2</span>
-                </div>
-                <span>Carrito</span>
-            </a>
-            <a href="#" class="nav-item">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                </svg>
-                <span>Perfil</span>
-            </a>
+                    <span>Inicio</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <span>Favoritos</span>
+                </a>
+                <a href="views/checkout.html" class="nav-item">
+                    <div class="cart-icon-wrapper">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="cart-badge">2</span>
+                    </div>
+                    <span>Carrito</span>
+                </a>
+                <a href="#" class="nav-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Perfil</span>
+                </a>
+            </div>
         </nav>
     </div>
 </body>
